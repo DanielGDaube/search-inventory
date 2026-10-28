@@ -4,6 +4,7 @@ import java.io.BufferedReader;
 import java.io.FileReader;
 import java.io.IOException;
 import java.util.ArrayList;
+import java.util.Comparator;
 
 // Starter for Search Inventory (Workbook 3a, Section 3-2 Using an ArrayList, Exercise 1).
 // main is done: it asks getInventory() for the list and prints every product.
@@ -37,6 +38,7 @@ public class SearchInventory {
 
         }
 
+        inventory.sort(Comparator.comparing(Product::getName));
 
         return inventory;
     }
