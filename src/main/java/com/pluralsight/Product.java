@@ -1,7 +1,7 @@
 package com.pluralsight;
 
 // One product the store carries: id, name and price.
-// toString() is what println(product) prints. Without it you would see
+// toString() is what println(product) prints. Without it, you would see
 // something like com.pluralsight.Product@1b6d3586.
 public class Product {
     private int id;
